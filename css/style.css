@@ -142,7 +142,7 @@ body{
 }
 
 .fon_img{
-	background-image: url(../../main.jpg);
+	background-image: url(../main.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
 }
