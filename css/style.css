@@ -247,7 +247,7 @@ header li:last-child{
 	margin-left: 25px;
 }
 
-header a{
+header nav ul li a{
 	display: inline-block;
 	text-align: center;
 	padding-top: 15px;
@@ -262,15 +262,21 @@ header a{
 
 
 
-header a:hover,
+header nav ul li a:hover,
 .activ{
-	
 	background-color: #f9f7f7;
 	color: #3f72af;
 	border: 1px #282828 solid;
 	border-radius: 10px;
 }
 
+
+header nav ul li a:focus{
+	background-color: #f9f7f7;
+	color: #3f72af;
+	border: 1px #282828 solid;
+	border-radius: 10px;
+}
 /*shoukase//////////////
 //////////////*/
 
@@ -597,7 +603,7 @@ form{
 	margin-bottom: 67px;
 }
 
-.tier_1 a{
+.tier_1 .bt{
 	margin-top: -15px;
 }
 
