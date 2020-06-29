@@ -1,0 +1,236 @@
+html{
+	color:#000;
+	background:#FFF;
+}
+/*
+	TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+	TODO test putting a class on HEAD.
+		- Fails on FF.
+*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,
+h4,h5,h6,pre,code,form,fieldset,legend,input,
+textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,
+img {
+	border:0;
+}
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ 
+ol,ul {
+	list-style:none;
+}
+ 
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,
+h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,
+q:after {
+	content:'';
+}
+abbr,
+acronym {
+	border:0;
+	font-variant:normal;
+}
+/* to preserve line-height and selector appearance */
+sup {
+	vertical-align:text-top;
+}
+sub {
+	vertical-align:text-bottom;
+}
+input,
+textarea,
+select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+	*font-size:100%; /*to enable resizing for IE*/
+}
+/*because legend doesn't inherit in IE */
+legend {
+	color:#000;
+}
+
+/*///////////////////////////////////*/
+@font-face {
+	font-family: 'roboto';
+	src: url('../fonts/roboto/regular/roboto-regular.eot');
+	src: url('../fonts/roboto/regular/roboto-regular.woff') format('woff'),
+		 url('../fonts/roboto/regular/roboto-regular.ttf') format('truetype'),
+		 url('../fonts/roboto/regular/roboto-regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'roboto';
+	src: url('../fonts/roboto/medium/roboto-medium.eot');
+	src: url('../fonts/roboto/medium/roboto-medium.woff') format('woff'),
+		 url('../fonts/roboto/medium/roboto-medium.ttf') format('truetype'),
+		 url('../fonts/roboto/medium/roboto-medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'roboto';
+	src: url('../fonts/roboto/bold/roboto-bold.eot');
+	src: url('../fonts/roboto/bold/roboto-bold.woff') format('woff'),
+		 url('../fonts/roboto/bold/roboto-bold.ttf') format('truetype'),
+		 url('../fonts/roboto/bold/roboto-bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+/* Слайдер */
+.slick-slider{}
+
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+
+
+/* Слайд */
+.slick-slide{}
+
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+
+
+/* Слайд основной */
+.slick-slide.slick-current{}
+
+
+/* Слайд по центру */
+.slick-slide.slick-center{}
+
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+
+
+/* Стрелка */
+.slick-arrow{}
+
+
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+
+
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+
+
+/* Активная точка */
+.slick-dots li.slick-active{}
+
+
+/* Элемент точки */
+.slick-dots li button{}
+
+
+
+
+
+
+
+/*/////////*/
+.slider{
+    background-color: blue;
+    min-width: 0;
+    padding: 0px 50px;
+}
+
+.slider .slick-arrow{
+    position: absolute;
+    top: 70%;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 40px;
+    background-color: aqua;
+}
+
+.slider .slick-arrow.slick-prev{
+    left: 0;
+}
+
+.slider .slick-arrow.slick-next{
+    right: 0;
+}
+
+
+
+/*//////////////////////
+///////////////////////////////*/
+.slider_item{
+    background-color: aqua;
+    width: 470;
+    height: 216px;
+}
+
+.slider_item p{
+    margin-top: 41px;
+    width: 388px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #333333;
+    font-weight: 500;
+    font-family: "roboto";
+    text-align: center;
+}
+
+.slider_item p:last-child{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 24px;
+}
