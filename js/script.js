@@ -1,5 +1,8 @@
 $(document).ready(function(){
     $('.slider').slick({
-        arrows:false,
+        adaptiveHeight:true,
+        slidesToShow: 2,
+        centerMode: true,
+        variableWidth: false,
     });
 });
