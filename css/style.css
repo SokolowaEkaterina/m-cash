@@ -869,10 +869,6 @@ footer a{
 	border-bottom: none;
 }
 
-.footer_other_links .footer_box:last-child a:focus{
-	border-bottom: none;
-}
-
 .footer_box p:first-child{
 	font-size: 18px;
 	font-weight: 500;
