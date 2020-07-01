@@ -865,8 +865,11 @@ footer a{
 	background-color: transparent;
 }
 
-.footer_other_links .footer_box:last-child a:hover,
-:focus{
+.footer_other_links .footer_box:last-child a:hover{
+	border-bottom: none;
+}
+
+.footer_other_links .footer_box:last-child a:focus{
 	border-bottom: none;
 }
 
