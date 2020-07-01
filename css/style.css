@@ -865,6 +865,11 @@ footer a{
 	background-color: transparent;
 }
 
+.footer_other_links .footer_box:last-child a:hover,
+:focus{
+	border-bottom: none;
+}
+
 .footer_box p:first-child{
 	font-size: 18px;
 	font-weight: 500;
